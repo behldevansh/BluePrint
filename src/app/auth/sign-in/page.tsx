@@ -3,9 +3,11 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { useAuth } from '@/hooks/use-auth'
 import Link from 'next/link'
 
 export default function Login() {
+    useAuth()
     return (
         <section className="bg-background flex grid min-h-screen grid-rows-[auto_1fr] px-4">
             <div className="mx-auto w-full max-w-7xl border-b py-3">
